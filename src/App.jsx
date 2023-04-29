@@ -43,7 +43,7 @@ function App() {
               .then(response => response.json())
               .then(data => {
                 doFetch = false;
-                if (data.region != undefined) {
+                if (data.region !== undefined) {
                   setIpReturned(data.ip);
                   setLocation(`${data.region}, ${data.city}, ${data.postal}`)
                   setTimezone(`UTC ${data.timezone.utc}`);
