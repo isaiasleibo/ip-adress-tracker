@@ -39,7 +39,7 @@ function App() {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           if (doFetch) {
-            fetch(`http://ipwho.is/${ip}`)
+            fetch(`https://ipwho.is/${ip}`)
               .then(response => response.json())
               .then(data => {
                 doFetch = false;
