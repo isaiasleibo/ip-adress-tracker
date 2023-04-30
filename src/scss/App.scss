@@ -107,10 +107,6 @@ html, body, #root {
                 margin: auto;
             }
         }
-
-        div:after {
-            height: 50%;
-        }
     }
 }
 
@@ -134,17 +130,16 @@ html, body, #root {
 
 @media screen and (max-width: 1140px) {
     html, body, #root {
-        min-height: 900px;
-    }
-
-    #map {
-        height: calc(100% - 400px);
+        min-height: 700px;
     }
 
     #ipInputContainer {
-        height: 400px;
         background: url(../img/pattern-bg-mobile.png);
         background-size: cover;
+
+        h1 {
+            padding-top: 16px;
+        }
 
         #inputContainer {
             bottom: 100px;
@@ -155,6 +150,10 @@ html, body, #root {
             text-align: center;
             width: calc(100vw - 40px) !important;
             max-width: 400px !important;
+
+            div {
+                padding: 10px 20px;
+            }
     
             .border {
                 display: none;

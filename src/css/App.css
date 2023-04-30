@@ -104,9 +104,6 @@ html, body, #root {
   left: -10px;
   margin: auto;
 }
-#ipInputContainer #ipInfo div:after {
-  height: 50%;
-}
 
 #map {
   height: calc(100% - 300px);
@@ -125,15 +122,14 @@ html, body, #root {
 
 @media screen and (max-width: 1140px) {
   html, body, #root {
-    min-height: 900px;
-  }
-  #map {
-    height: calc(100% - 400px);
+    min-height: 700px;
   }
   #ipInputContainer {
-    height: 400px;
     background: url(../img/pattern-bg-mobile.png);
     background-size: cover;
+  }
+  #ipInputContainer h1 {
+    padding-top: 16px;
   }
   #ipInputContainer #inputContainer {
     bottom: 100px;
@@ -143,6 +139,9 @@ html, body, #root {
     text-align: center;
     width: calc(100vw - 40px) !important;
     max-width: 400px !important;
+  }
+  #ipInputContainer #ipInfo div {
+    padding: 10px 20px;
   }
   #ipInputContainer #ipInfo .border {
     display: none;

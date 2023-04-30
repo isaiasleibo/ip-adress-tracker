@@ -83,7 +83,7 @@ function App() {
   function Map() {
 
     return (
-      <MapContainer id="map" center={[mapLocation[0] + 0.0013, mapLocation[1]]} zoom={17}>
+      <MapContainer id="map" center={[mapLocation[0] + 0.0007, mapLocation[1]]} zoom={17}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
@@ -97,12 +97,13 @@ function App() {
     if (ipInfo.current) {
       const ipInfoHeight = ipInfo.current.offsetHeight;
       const ipInfoPosition = ipInfoHeight / 2;
-      const ipHeightMobile = ipInfoHeight / 1.5;
 
       if (window.innerWidth <= 1140) {
-        ipInfo.current.style.bottom = `-${ipHeightMobile}px`
+        ipInfo.current.style.top = `150px`;
+        ipInfo.current.style.bottom = 'auto';
       } else {
         ipInfo.current.style.bottom = `-${ipInfoPosition}px`;
+        ipInfo.current.style.top = 'auto';
       }
     }
   };
