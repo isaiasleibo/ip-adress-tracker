@@ -54,6 +54,11 @@ html, body, #root {
                 justify-content: center;
                 align-items: center;
                 margin: 0;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #3D3D3D;
             }
         }
     }

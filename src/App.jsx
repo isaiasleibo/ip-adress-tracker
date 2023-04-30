@@ -50,6 +50,7 @@ function App() {
                   setIsp(data.connection.isp);
                   setMapLocation([data.latitude, data.longitude]);
                 } else {
+                  setIpReturned("Not found");
                   setLocation("Not found");
                   setTimezone("Not found");
                   setIsp("Not found");
