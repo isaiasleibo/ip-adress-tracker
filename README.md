@@ -2,16 +2,15 @@
 
 This project is a solution to the challenge provided by [Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
 
-The goal was to build a web application that allows users to track the location and details of an IP address or domain name. The project used the IP Geolocation API provided by [IPWhois](https://ipwhois.io/) to get the location details and ReactJS to generate the map.
+The goal was to build a web application that allows users to track the location and details of an IP address or domain name. The project used the IP Geolocation API provided by [IPWhois](https://ipwhois.io/) to get the location details and [React Leaflet](https://react-leaflet.js.org/) to generate the map.
 
 ## Project Requirements
 
 The requirements for the project were to:
 
 - Build a web application that displays the location of an IP address or domain name on a map.
-- Use the IP Geolocation API provided by IPWhois to get the location details.
-- Use ReactJS to generate the map.
-- Use Sass for styling.
+- Use the IP Geolocation API to get the location details.
+- Use Leaflet to generate the map.
 - Ensure that the application is responsive and optimized for different screen sizes.
 - Allow users to search for any IP addresses or domains and see the key information and location.
 
@@ -22,8 +21,8 @@ The following technologies were used to complete the project:
 - HTML
 - Sass
 - JavaScript
-- ReactJS
-- LeafletJS
+- React
+- React Leaflet
 - IPWhois API
 
 ## Solution Overview
@@ -39,8 +38,8 @@ To run the application, follow these steps:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory in your terminal.
 3. Run `npm install` to install the necessary dependencies.
-4. Run `npm start` to start the development server.
-5. Open your web browser and navigate to `http://localhost:3000` to view the application.
+5. Run `npm start` to start the development server.
+6. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
 Alternatively, you can visit the deployed version of the project at https://sensational-malasada-264c4a.netlify.app/
 
